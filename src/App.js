@@ -119,7 +119,7 @@ class App extends React.Component {
             <Button type="primary" onClick={this.changeLocale} >
               {intl.get('title')} &nbsp;&nbsp;
               {intl.get('ConfigRedux')}&nbsp;&nbsp;
-              {intl.get('configRouter')}&nbsp;&nbsp;
+              {intl.get('Customtheme')}&nbsp;&nbsp;
               {intl.get('configReq')}&nbsp;&nbsp;
               {intl.get('i18n')}&nbsp;&nbsp;
             </Button>

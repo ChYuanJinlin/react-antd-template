@@ -1,8 +1,8 @@
 const zh = {
     "title": "按需加载",
     "i18n": "配置国际化",
+    "Customtheme":"自定义主题",
     "ConfigRedux": "配置Redux",
-    "configRouter": "配置react路由",
     "configReq": "封装axios"
 }
 

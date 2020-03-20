@@ -1,8 +1,8 @@
 const en = {
     "title": "axjz",
     "i18n": "configI18n",
+    "Customtheme":"Customtheme",
     "ConfigRedux": "configRedux",
-    "configRouter": "configRouter",
     "configReq": "configReq"
 }
 
