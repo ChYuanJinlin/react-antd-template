@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-03-01 17:19:53
- * @LastEditTime: 2020-03-20 14:08:48
+ * @LastEditTime: 2020-03-20 14:16:05
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \vue-blog\src\request\axios.js
@@ -83,10 +83,7 @@ axios.interceptors.response.use(
                 // 登录过期对用户进行提示
                 // 跳转登录页面                
                 case 403:
-                    Message({
-                        message: '登录过期，请重新登录',
-                        type: 'warning',
-                    });
+                    message.warning('登录过期，请重新登录')
                     // 清除token
                     localStorage.removeItem('token');
                     // 跳转登录页面，并将要浏览的页面fullPath传过去，登录成功后跳转需要访问的页面 
@@ -97,17 +94,11 @@ axios.interceptors.response.use(
 
                 // 404请求不存在
                 case 404:
-                    Message({
-                        message: '404地址不存在',
-                        type: 'error',
-                    });
+                    message.error('404地址不存在')
                     break;
                 // 其他错误，直接抛出错误提示
                 default:
-                    Message({
-                        message: error.response.data.msg,
-                        type: 'error',
-                    });
+                    message.error(error.response.data.msg)
             }
             return Promise.reject(error.response);
         }
