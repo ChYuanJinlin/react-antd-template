@@ -11,8 +11,8 @@ module.exports = override(
      javascriptEnabled: true,
     //  使用自定义深色主题
      modifyVars: {
-           'hack': `true;@import "${require.resolve('antd/lib/style/color/colorPalette.less')}";`,
-           ...darkThemeVars,
+          //  'hack': `true;@import "${require.resolve('antd/lib/style/color/colorPalette.less')}";`,
+          //  ...darkThemeVars,
             '@primary-color': '#1DA57A'
             },
    }),
